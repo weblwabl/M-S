@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "martysonsplumbing",
+=======
+  "name": "msplumb",
+>>>>>>> b48fff4189a00f66613bd686e187bb98c5e937ef
   "private": true,
   "dependencies": {
     "bootstrap-sass-official": "~3.3.1",

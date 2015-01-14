@@ -1,3 +1,4 @@
+<<<<<<< HEAD:app/styles/main.scss
 //Main Sass file
 //--------------------------------------------------------------------
 
@@ -14,6 +15,14 @@ $icon-font-path: '../bower_components/bootstrap-sass-official/assets/fonts/boots
   padding-top: 30px !important;
 }
 
+=======
+$icon-font-path: '../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/';
+
+// bower:scss
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+>>>>>>> b48fff4189a00f66613bd686e187bb98c5e937ef:app/styles/main.scss
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -32,7 +41,10 @@ body {
 .header,
 .marketing,
 .footer {
+<<<<<<< HEAD:app/styles/main.scss
   padding-top: 40px;
+=======
+>>>>>>> b48fff4189a00f66613bd686e187bb98c5e937ef:app/styles/main.scss
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -65,11 +77,25 @@ body {
 .jumbotron {
   text-align: left;
   border-bottom: 1px solid #e5e5e5;
+<<<<<<< HEAD:app/styles/main.scss
+=======
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+>>>>>>> b48fff4189a00f66613bd686e187bb98c5e937ef:app/styles/main.scss
 }
 
 /* Supporting marketing content */
 .marketing {
+<<<<<<< HEAD:app/styles/main.scss
   margin: 20px 0;
+=======
+  margin: 40px 0;
+  p + h4 {
+    margin-top: 28px;
+  }
+>>>>>>> b48fff4189a00f66613bd686e187bb98c5e937ef:app/styles/main.scss
 }
 
 /* Responsive: Portrait tablets and up */
