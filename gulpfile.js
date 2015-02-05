@@ -6,10 +6,7 @@ var $ = require('gulp-load-plugins')();
 
 gulp.task('styles', function () {
   return gulp.src('app/styles/main.scss')
-<<<<<<< HEAD
-=======
     .pipe($.plumber())
->>>>>>> b48fff4189a00f66613bd686e187bb98c5e937ef
     .pipe($.rubySass({
       style: 'expanded',
       precision: 10

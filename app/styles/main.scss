@@ -1,4 +1,3 @@
-<<<<<<< HEAD:app/styles/main.scss
 //Main Sass file
 //--------------------------------------------------------------------
 
@@ -15,14 +14,12 @@ $icon-font-path: '../bower_components/bootstrap-sass-official/assets/fonts/boots
   padding-top: 30px !important;
 }
 
-=======
 $icon-font-path: '../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/';
 
 // bower:scss
 @import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
->>>>>>> b48fff4189a00f66613bd686e187bb98c5e937ef:app/styles/main.scss
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -35,16 +32,14 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   //@include edit(grey);
+  background:url('../images/bg2.png') repeat;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
 .footer {
-<<<<<<< HEAD:app/styles/main.scss
   padding-top: 40px;
-=======
->>>>>>> b48fff4189a00f66613bd686e187bb98c5e937ef:app/styles/main.scss
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -52,6 +47,7 @@ body {
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
+  @include center(900px);
 
   /* Make the masthead heading the same height as the navigation */
   h3 {
@@ -64,9 +60,13 @@ body {
 
 /* Custom page footer */
 .footer {
+  @include center(900px);
   margin-top: 200px;
   color: #777;
   border-top: 1px solid #e5e5e5;
+  p {
+    padding-left: 50px;
+  }
 }
 
 .container-narrow > hr {
@@ -77,25 +77,19 @@ body {
 .jumbotron {
   text-align: left;
   border-bottom: 1px solid #e5e5e5;
-<<<<<<< HEAD:app/styles/main.scss
-=======
   .btn {
     font-size: 21px;
     padding: 14px 24px;
   }
->>>>>>> b48fff4189a00f66613bd686e187bb98c5e937ef:app/styles/main.scss
 }
 
 /* Supporting marketing content */
 .marketing {
-<<<<<<< HEAD:app/styles/main.scss
   margin: 20px 0;
-=======
   margin: 40px 0;
   p + h4 {
     margin-top: 28px;
   }
->>>>>>> b48fff4189a00f66613bd686e187bb98c5e937ef:app/styles/main.scss
 }
 
 /* Responsive: Portrait tablets and up */
@@ -123,17 +117,30 @@ body {
   }
 }
 
-.side-left {
-  @include col(1/3);
-  background-color: lightgrey;
-  padding-top: 75px;
-  padding-bottom: 75px;
-}
-.side-left h3 {
-  padding-left: 15px;
-}
-.side-right {
-  @include col(1/4,1/6);
-  position: absolute;
+.container {
+  @include center(1000px);
+  background-color: #ffffff;
+  .wrapper{
+      @include center(900px);
+    .aboutleft {
+      @include col(2/3)
+    }
+    .side-left {
+      @include col(1/3);
+      //background-color: lightgrey;
+      padding-top: 75px;
+      padding-bottom: 75px;
+    }
+    .side-left h3 {
+      padding-left: 15px;
+    }
+    .side-right {
+      @include col(1/4, 1/6);
+      position: absolute;
 
+      h4 {
+        padding-top: 50px;
+      }
+    }
+  }
 }
